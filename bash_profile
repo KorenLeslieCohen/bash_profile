@@ -1,5 +1,7 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+alias subl='open -a /Applications/Sublime\ Text.app'
+alias killserver='ps axw | grep weblogic | grep -v 'grep' | cut -d" " -f1 | xargs kill' #jcrew
 
   # This function is called in your prompt to output your active git branch.
   function parse_git_branch {
